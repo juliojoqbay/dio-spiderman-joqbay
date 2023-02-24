@@ -1,0 +1,54 @@
+
+nav {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+nav ul li {
+    margin: 60px 0;
+}
+
+nav ul li:first-child {
+    margin-top: 0;
+}
+
+nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+nav::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: white;
+}
+
+nav ul {
+    position: relative;
+}
+
+nav ul li a:hover,
+.nav ul li a:active {
+    color: #B9001F;
+    background-color: white;
+    transform: scale(1.2);
+} /* aside left-column and nav style end */
